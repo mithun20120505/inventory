@@ -7,6 +7,7 @@ AuthController.read = (req, res) => {
   if (req.session.user) {
     return res.redirect('/dashboard');
   }
+  // res.redirect('/user');
   res.render('login');
 };
 
